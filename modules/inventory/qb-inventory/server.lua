@@ -1,5 +1,5 @@
 ---@diagnostic disable: duplicate-set-field
-if GetResourceState('qb-inventory') ~= 'started' then return end
+if GetResourceState('qb-inventory') == 'missing' then return end
 local qbInventory = exports['qb-inventory']
 
 Inventory = Inventory or {}
